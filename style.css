@@ -31,7 +31,7 @@ header{
 }
 
 .logo img{
-    width: 30px;
+    max-width: 30px;
 }
 
 .logo p{
@@ -119,11 +119,11 @@ nav ul li a:hover{
 
 .about{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     gap: 80px;
-    padding: 30px 0;
+    padding: 0;
 }
 
 .about-description{
@@ -146,7 +146,154 @@ nav ul li a:hover{
 }
 
 .about-picture img{
-    width: 35vw;
+    width: 40vw;
+    box-shadow: 10px 10px 0 #c9082a;
 }
 
+/*=================FAVORITE-TEAM SECTION=====================*/
+.favorite-team{
+    width: 100%;
+    background: url(./img/background-favorite-min.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    position: relative;
+}
+
+.favorite-team:before{
+    content: '';
+    background-color: rgba(23, 64, 139, .9);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+.favorite-team h2{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #fff;
+    z-index: 5;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.teams-logos{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    gap: 5px;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.teams-logos .team{
+    max-width: 70px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 2px 2px 0px transparent;
+    transition: all .3s;
+}
+
+.teams-logos .team:hover{
+    scale: 1.1;
+    border-color: #17408b;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 0px white;
+}
+
+/*====================SHOP SECTION====================*/
+
+.shop h2{
+    padding: 50px 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    text-decoration: underline #c9082a 10px;
+}
+
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    row-gap: 50px;
+}
+
+.product{
+    text-align: center;
+}
+
+.product img{
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.product img:hover{
+    border-color: black;
+    scale: 1.1;
+}
+
+.product h3{
+    font-size: 24px;
+    font-style: italic;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.product p{
+    font-size: 14px;
+}
+
+.product button{
+    background-color: #c9082a;
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.product button:hover{
+    scale: 1.1;
+}
+
+.shop .more-button{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 70px 0;
+}
+
+.divider{
+    border-bottom: 1px solid #ccc;
+    height: 0;
+}
+
+.shop a{
+    color: #fff;
+    background-color: #c9082a;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+
+.shop a:hover{
+    scale: 1.1;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+}
 
