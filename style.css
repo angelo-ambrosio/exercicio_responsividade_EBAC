@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #fff;
+    height: 10vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img{
+    width: 30px;
+}
+
+.logo p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    border-bottom: 4px solid #17408b;
+}
+
+.hero{
+    width: 100vw;
+    background: url(./img/lebron.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+}
+
+.hero:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .container{
+    display: flex;
+    gap: 35px;
+    z-index: 1;
+}
+
+.hero .container img{
+    width: 100px;
+}
+
+.hero p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 144px;
+    color: #fff;
+}
+
+.hero a{
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.hero a img{
+    width: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero a img:hover{
+    scale: 1.2;
+}
+
+/*============ABOUT-SECTION================*/
+
+.about{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 30px 0;
+}
+
+.about-description{
+    background-color: #c9082a;
+    padding: 20px 5px 20px 20px;
+    color: #fff;    
+}
+
+.about-description h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about-description p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 15px;
+}
+
+.about-picture img{
+    width: 35vw;
+}
+
+
