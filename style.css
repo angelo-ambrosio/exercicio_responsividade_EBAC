@@ -12,7 +12,7 @@ body{
 
 header{
     background-color: #fff;
-    height: 10vh;
+    max-height: 10vh;
 }
 
 .container{
@@ -327,6 +327,14 @@ nav ul li a:hover{
     position: relative;
 }
 
+.social-media .right-side{
+    order: 1;
+}
+
+.social-media .left-side{
+    order: 2;
+}
+
 .social-media .container{
     justify-content: center;
     gap: 100px;
@@ -344,7 +352,7 @@ nav ul li a:hover{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 26px;
     cursor: pointer;
-    margin: 30px 0;
+    margin: 30px 0 30px auto;
     border: none;    
     display: flex;
 }
@@ -406,4 +414,174 @@ footer a{
     text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 22px;
+}
+
+
+@media (max-width: 1280px){
+    #menu{
+        padding: 0 20px;
+    }
+    
+    .teams-logos{
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .social-media{
+        background-position: right center;
+    }
+
+    .social-media .container div{
+        width: 80%;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        height: 13vh;
+    }
+
+    .hero{
+        height: 87vh;
+    }
+    
+    header .container{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .logo{
+        gap: 5px;
+    }
+
+    .logo img{
+        max-width: 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .hero p{
+        font-size: 88px;
+    }
+
+    .hero .container img{
+        width: 80px;
+    }
+    
+    .about{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 30px;
+    }
+
+    .about img{
+        width: 65vw;
+    }
+
+    .about-description h2{
+        font-size: 1.5em;
+    }
+
+    .about-description p{
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .teams-logos{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .shop h2{
+        justify-content: center;
+    }
+
+    .products-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product p{
+        font-size: 10px;
+    }
+
+    .social-media .container{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-media button{
+        margin: 20px auto;
+    }
+
+    .left-side{
+        margin: 0 auto;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 425px){
+    
+    header{
+        height: 13vh;
+    }
+
+    .hero{
+        height: 87vh;
+    }
+
+    nav ul{
+        gap: 10px;
+    }
+    
+    .hero .container{
+        gap: 15px;
+        flex-direction: column;
+    }
+    
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .about-description{
+        padding: 20px;
+    }
+
+    .about-picture img{
+        width: 70vw;
+    }
+
+    .teams-logos{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .teams-logos .team{
+        max-width: 60px;
+    }
+
+    .products-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .product p{
+        font-size: 14px;
+    }
+
+    .container .left-side{
+        display: none;
+    }
+
+    footer .container{
+        gap: 40px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+
 }

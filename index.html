@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="menu">
         <div class="container">
             <div class="logo">
                 <img src="./img/logo-nba.png" alt="Logo NBA">
@@ -21,25 +21,25 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Times</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#menu" id="home-button">Início</a></li>
+                    <li><a href="#about" id="about-button">Sobre</a></li>
+                    <li><a href="#favorite-team" id="team-button">Times</a></li>
+                    <li><a href="#shop" id="shop-button">Produtos</a></li>
+                    <li><a href="#social-media" id="social-button">Social Media</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="container">
             <img src="./img/logo-nba.png" alt="Logo NBA">
             <p>NBA STORE</p>
         </div>
-        <a href="#"><img src="./img/arrow.svg" alt="seta para baixo"></a>
+        <a href="#about"><img src="./img/arrow.svg" alt="seta para baixo"></a>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-picture">
             <img src="./img/champions.jpg" alt="">
         </div>
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <section class="favorite-team">
+    <section class="favorite-team" id="favorite-team">
         <h2>ESCOLHA SEU TIME DO CORAÇÃO</h2>
         <div class="container">
             <div class="teams-logos">
@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <section class="shop">
+    <section class="shop" id="shop">
         <h2 class="container">PRODUTOS</h2>
         <div class="container">
             <div class="products-grid">
@@ -153,8 +153,8 @@
         <div class="more-button"><a href="#">Ver mais produtos</a></div>
     </section>
 
-    <!--CONTINUAR DAQUI-->
-    <section class="social-media">
+
+    <section class="social-media" id="social-media">
         <h2>Siga a NBA</h2>
         <div class="container">
             <div class="left-side">
@@ -184,11 +184,11 @@
     <footer>
         <div class="container">
             <p>Site demonstrativo. Exercício do curso de frontend ministrado pela EBAC</p>
-            <a href="#">Voltar ao início</a>
+            <a href="#menu" id="home-button">Voltar ao início</a>
         </div>
     </footer>
 
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
     
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
 </body>
 </html>
