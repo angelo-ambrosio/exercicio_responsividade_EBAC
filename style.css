@@ -297,3 +297,113 @@ nav ul li a:hover{
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
 }
 
+/*===============SOCIAL MEDIA===================*/
+
+.social-media{
+    background: url(./img/ja-morant-min.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+}
+
+.social-media:before{
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+.social-media h2{
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: 70px;
+    font-size: 48px;
+    z-index: 2;
+    position: relative;
+}
+
+.social-media .container{
+    justify-content: center;
+    gap: 100px;
+    z-index: 2;
+    position: relative;
+}
+
+.social-media .container div{
+    width: 100%;
+}
+
+.social-media button{
+    padding: 20px 20%;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    margin: 30px 0;
+    border: none;    
+    display: flex;
+}
+
+.right-side a{
+    text-decoration: none;
+}
+
+.instagram{
+    background: rgba(225, 48, 108, 1);
+    color: #fff;
+    transition: all .4s;
+}
+
+.instagram:hover{
+    background: linear-gradient(to top, transparent, rgba(225, 48, 108, 1));
+}
+
+.facebook{
+    background: rgba(66, 103, 178, 1);
+    color: #fff;
+    transition: all .4s;
+}
+
+.facebook:hover{
+    background: linear-gradient(to top, transparent, rgba(66, 103, 178, 1));
+}
+
+.youtube{
+    background: #c4302b;
+    color: #fff;
+    transition: all .4s;
+}
+
+.youtube:hover{
+    background: linear-gradient(to top, transparent, #c4302b);
+}
+
+.spotify{
+    background: #1ed760;
+    color: #fff;
+    transition: all .4s;
+}
+
+.spotify:hover{
+    background: linear-gradient(to top, transparent, #1ed760);
+}
+
+/*=========================FOOTER===========================*/
+
+footer{
+    background-color: #17408b;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+}
